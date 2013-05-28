@@ -196,7 +196,7 @@ endif "has("autocmd")
 " 需要去掉./这两个字符 
 
 " C的编译和运行 
-map <F5> :call CompileRunGcc()<CR> 
+map <F8> :call CompileRunGcc()<CR> 
 func! CompileRunGcc() 
 exec "w" 
 exec "!gcc % -o %<" 
@@ -204,7 +204,7 @@ exec "! ./%<"
 endfunc 
 
 " C++的编译和运行 
-map <F6> :call CompileRunGpp()<CR> 
+map <F9> :call CompileRunGpp()<CR> 
 func! CompileRunGpp() 
 exec "w" 
 exec "!g++ % -o %<" 
