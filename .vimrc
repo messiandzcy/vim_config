@@ -8,6 +8,8 @@ set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936
 " 不要使用vi的键盘模式，而是vim自己的 
 set nocompatible 
 
+"显示行号
+set number
 " history文件中需要记录的行数 
 set history=100 
 
