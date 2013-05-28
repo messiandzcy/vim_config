@@ -191,7 +191,7 @@ autocmd BufReadPost *
 \ endif 
 endif "has("autocmd") 
 
-" F5编译和运行C程序，F6编译和运行C++程序 
+" F8编译和运行C程序，F9编译和运行C++程序 
 " 请注意，下述代码在windows下使用会报错 
 " 需要去掉./这两个字符 
 
