@@ -179,19 +179,19 @@ let Tlist_Enable_Fold_Column = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " 只在下列文件类型被侦测到的时候显示行号，普通文本文件不显示 
 
-if has("autocmd") 
-autocmd FileType xml,html,c,cs,java,perl,shell,bash,cpp,python,vim,php,ruby set number 
-autocmd FileType xml,html vmap <C-o> <ESC>'<i<!--<ESC>o<ESC>'>o--> 
-autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o 
-autocmd FileType html,text,php,vim,c,java,xml,bash,shell,perl,python setlocal textwidth=100 
-autocmd Filetype html,xml,xsl source $VIMRUNTIME/plugin/closetag.vim 
-autocmd BufReadPost * 
-\ if line("'\"") > 0 && line("'\"") <= line("$") | 
-\ exe " normal g`\"" | 
-\ endif 
-endif "has("autocmd") 
+"if has("autocmd") 
+"autocmd FileType xml,html,c,cs,java,perl,shell,bash,cpp,python,vim,php,ruby set number 
+"autocmd FileType xml,html vmap <C-o> <ESC>'<i<!--<ESC>o<ESC>'>o--> 
+"autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o 
+"autocmd FileType html,text,php,vim,c,java,xml,bash,shell,perl,python setlocal textwidth=100 
+"autocmd Filetype html,xml,xsl source $VIMRUNTIME/plugin/closetag.vim 
+"autocmd BufReadPost * 
+"\ if line("'\"") > 0 && line("'\"") <= line("$") | 
+"\ exe " normal g`\"" | 
+"\ endif 
+"endif "has("autocmd") 
 
-" F8编译和运行C程序，F9编译和运行C++程序 
+" F5编译和运行C程序，F6编译和运行C++程序 
 " 请注意，下述代码在windows下使用会报错 
 " 需要去掉./这两个字符 
 
