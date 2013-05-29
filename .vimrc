@@ -1,6 +1,9 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " 一般设定 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+"设定折叠方式
+set foldenable
+set foldmethod=indent
 " 设定默认解码 
 set fenc=utf-8 
 set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936 
@@ -240,6 +243,7 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1
 
+"今天在图书馆碰到了短发的小崔！！
 
 "通过WinManager插件将TagList窗口和netrw窗口整合起来
 let g:winManagerWindowLayout='FileExplorer|TagList'
