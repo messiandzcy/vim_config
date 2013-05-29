@@ -241,6 +241,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 "今天在图书馆碰到了短发的小崔！！
+"开始复习体系结构！
 
 "通过WinManager插件将TagList窗口和netrw窗口整合起来
 let g:winManagerWindowLayout='FileExplorer|TagList'
