@@ -1,6 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " 一般设定 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+"设定屏之间切换光标映射
+"nmap wh : <C-w>
+"设定下次开启文件时保存折叠信息
+au BufWinLeave * silent mkview
+au BufWinEnter * silent loadview
+
 "设定折叠方式
 set foldenable
 set foldmethod=indent
