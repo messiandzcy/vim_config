@@ -4,8 +4,11 @@
 "设定屏之间切换光标映射
 "nmap wh : <C-w>
 "设定下次开启文件时保存折叠信息
-au BufWinLeave * silent mkview
-au BufWinEnter * silent loadview
+"au BufWinLeave * silent mkview
+"au BufWinEnter * silent loadview
+
+"开启pathogen
+execute pathogen#infect()
 
 "设定折叠方式
 set foldenable
@@ -84,9 +87,9 @@ set backspace=2
 set whichwrap+=<,>,h,l 
 
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位） 
-set mouse=a 
-set selection=exclusive 
-set selectmode=mouse,key 
+"set mouse=a 
+"set selection=exclusive 
+"set selectmode=mouse,key 
 
 " 启动的时候不显示那个援助索马里儿童的提示 
 set shortmess=atI 
@@ -259,4 +262,13 @@ nmap wm :WMToggle<cr>
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 
+"让vim记住上次光标的位置
+autocmd BufReadPost *
+		\ if line("'\"")>0&&line("'\"")<=line("$") |
+		\	exe "normal g'\"" |
+		\ endif
+"安装Bundle插件
+"Bundle 'dgryski/vim-godef'
+"Bundle 'Blackrush/vim-gocode'
+"Bundle 'majutsushi/tagbar'
 
