@@ -50,8 +50,8 @@ set iskeyword+=_,$,@,%,#,-
 syntax on 
 
 " 高亮字符，让其不受100列限制 
-:highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white 
-:match OverLength '\%101v.*' 
+":highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white 
+":match OverLength '\%101v.*' 
 
 " 状态行颜色 
 highlight StatusLine guifg=SlateBlue guibg=Yellow 
@@ -116,7 +116,7 @@ set matchtime=5
 set ignorecase 
 
 " 不要高亮被搜索的句子（phrases） 
-set nohlsearch 
+"set nohlsearch 
 
 " 在搜索时，输入的词句的逐字符高亮（类似firefox的搜索） 
 set incsearch 
