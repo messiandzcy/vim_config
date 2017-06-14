@@ -8,7 +8,7 @@
 "au BufWinEnter * silent loadview
 
 "开启pathogen
-execute pathogen#infect()
+"execute pathogen#infect()
 
 "设定折叠方式
 set foldenable
